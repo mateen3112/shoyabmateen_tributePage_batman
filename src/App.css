@@ -1,0 +1,21 @@
+.App {
+  background: black;
+  color: white;
+  display: grid;
+  height: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+  text-align: center;
+  grid-template-rows:  100vh auto auto;
+  /* "header" */
+  grid-template-areas: 
+    "hero"
+    "history"
+    "footer";
+  grid-row-gap: 1em;
+}
+
+.footer {
+  grid-area: footer;
+}
